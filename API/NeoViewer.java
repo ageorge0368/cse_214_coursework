@@ -24,25 +24,25 @@ public class NeoViewer {
 
     public static void main (String[] args) {
 
-//        NeoDatabase newDB = new NeoDatabase();
+        NeoDatabase newDB = new NeoDatabase();
 
-/*        newDB.addAll("https://api.nasa.gov/neo/rest/v1/neo/browse?page=0&api_key=HcpkwUesG8VtmnQ53EP1XoqCWmzgXjncx1u7aaWO");
+        newDB.addAll("https://api.nasa.gov/neo/rest/v1/neo/browse?page=0&api_key=HcpkwUesG8VtmnQ53EP1XoqCWmzgXjncx1u7aaWO");
 
 //        newDB.printAll();
-        newDB.printTable();
+//        newDB.printTable();
 
         DiameterComparator sortDiameter = new DiameterComparator();
 
-        newDB.sort(sortDiameter);
+//        newDB.sort(sortDiameter);
 
 //        newDB.printAll();
-        newDB.printTable();*/
+//        newDB.printTable();
 
 
         System.out.println("\nWelcome to NEO Viewer!");
 
         // NEO Database
-        NeoDatabase newDB = new NeoDatabase();
+//        NeoDatabase newDB = new NeoDatabase();
 
         Scanner stdin = new Scanner(System.in);
 
@@ -120,7 +120,7 @@ public class NeoViewer {
                                     break;
 
                                 case 'D':
-                                    DiameterComparator sortDiameter = new DiameterComparator();
+//                                    DiameterComparator sortDiameter = new DiameterComparator();
                                     newDB.sort(sortDiameter);
 
                                     System.out.println("Table sorted on diameter.");
